@@ -3,6 +3,7 @@
    * @time-taken {28mins}
    * @param {n an integer} 
    * @returns {max length of zeros in a binary gap}
+   * @score {100%}
    */
   
   function convertToBinary(n){
