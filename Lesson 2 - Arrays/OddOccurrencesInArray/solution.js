@@ -71,5 +71,5 @@ function solutionA(N){
         running = false;
       }
     }while(running);
-    return data;
+    return data[0];
   }
