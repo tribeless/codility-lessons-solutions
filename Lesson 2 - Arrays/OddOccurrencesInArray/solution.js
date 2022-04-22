@@ -52,7 +52,7 @@ function solutionA(N){
  * @param {*} N 
  * @returns {key}
  * @score {correctness:100%,performance:25%,score:66%}
- * the pain I was feeling at this point was unimaginable, 3 algorithms but a performance of 2% still :(
+ * the pain I was feeling at this point was unimaginable, 3 algorithms but a performance of 25% still :(
  */
   function solutionC(N){
     let data = N.sort();
