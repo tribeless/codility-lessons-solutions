@@ -52,6 +52,7 @@ function solutionA(N){
  * @param {*} N 
  * @returns {key}
  * @score {correctness:100%,performance:25%,score:66%}
+ * the pain I was feeling at this point was unimaginable, 3 algorithms but a performance of 2% still :(
  */
   function solutionC(N){
     let data = N.sort();
@@ -73,3 +74,21 @@ function solutionA(N){
     }while(running);
     return data[0];
   }
+  /**
+ * Many many many agonising minutes later
+ * @param {*} N 
+ * @returns {key}
+ * @score {correctness:100%,performance:100%,score:100%}
+ * learnt the trick was to use new Set, see your life :)
+ */
+function solutionD(N){
+  const set = new Set();
+  for(const a of N){
+    if(set.has(a)){
+      set.delete(a);
+    }else{
+      set.add(a);
+    }
+  }
+  return [...set][0];
+}
