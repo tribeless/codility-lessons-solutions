@@ -30,3 +30,21 @@ function solution(A,K){
     }
     return data;
   }
+  /**
+   * @author {bcoder}
+   * @time-taken {4 minutes}
+   * @param {A an array, K int} 
+   * @returns {reversed array}
+   * @score {100%}
+   * learning how to write simpler solutions
+   * you can compare the first one and this one :)
+   * though i needed some help
+   */
+function solution(A, K) {
+    let data = [];
+    for(let i=0;i<A.length;i+=1){
+        let val = ((i+K)%A.length);
+        data[val] = A[i];
+    }
+    return data;
+}
